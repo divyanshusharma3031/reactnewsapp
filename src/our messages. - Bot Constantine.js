@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react'
 import Navbar from './components/Navbar';
-import News from './components/news';
+// import News from './components/news';
 import About from './components/About';
 import { useState } from 'react';
 import {
@@ -10,9 +10,9 @@ import {
   Route
 } from "react-router-dom";
 const App=()=> {
-  // let state={
-  //   mode:"light"
-  // }
+  let state={
+    mode:"light"
+  }
   const [mode, setmode] = useState("light")
   let api=process.env.REACT_APP_API;
     let changestate=()=>{
